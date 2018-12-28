@@ -310,7 +310,7 @@ Display Language Module
                         // query
                         var parameter = queryComponents[0];
                         parameter = parameter.replace('?', '').replace('&', '');
-                        OsWidget.rewriteParameteredUrlWithoutRefresh(parameter, preferencedLocale.platformLocale);
+                        OsWidget.rewriteParameteredUrlWithoutRefresh(parameter, queryComponents[1]);
                     }
                     else if (!isHostnameLocation) {
                         // path
