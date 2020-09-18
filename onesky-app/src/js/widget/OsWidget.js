@@ -26,11 +26,11 @@
         // when a locale preference is located a few clicks away and the app manipulates the dom after DOMContentLoaded event is fired
         // this fixes the dom event listener fires the DOMContentLoaded event before the document is loaded
         replace: function () {
-            OsWidget.initWithUrl('display-language');
-            OsWidget.initWithUrl('display-region');
-            OsWidget.initWithUrl('interested-regions');
-            OsWidget.initWithUrl('understood-languages');
-            OsWidget.loaders.forEach(function (loaderObject) {
+            window.OsWidget.initWithUrl('display-language');
+            window.OsWidget.initWithUrl('display-region');
+            window.OsWidget.initWithUrl('interested-regions');
+            window.OsWidget.initWithUrl('understood-languages');
+            window.OsWidget.loaders.forEach(function (loaderObject) {
                 loaderObject.loader();
             });
         },
