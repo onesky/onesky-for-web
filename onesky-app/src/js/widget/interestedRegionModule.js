@@ -4,7 +4,7 @@
 (function (OsWidget) {
 
     var _type = 'interested-regions';
-    var _selector = OsAppApi.findAppSelectorByExperienceType(OsSelectors, _type);
+    var _selector = window.OsAppApi.findAppSelectorByExperienceType(window.OsSelectors, _type);
     var _expanded = false;
 
     // called by widget init
@@ -214,4 +214,4 @@
 
     return OsWidget;
 
-})(OsWidget);
+})(window.OsWidget);
