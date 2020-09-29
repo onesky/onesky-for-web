@@ -4,7 +4,7 @@
 (function (OsWidget) {
 
     var _type = 'display-language';
-    var _selector = OsAppApi.findAppSelectorByExperienceType(OsSelectors, _type);
+    var _selector = window.OsAppApi.findAppSelectorByExperienceType(window.OsSelectors, _type);
 
     // called by widget init
     var _loader = function () {
@@ -235,4 +235,4 @@
 
     return OsWidget;
 
-})(OsWidget);
+})(window.OsWidget);
